@@ -17,11 +17,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Measles'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Measles',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
           Card(
@@ -29,11 +36,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Mumps'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Mumps',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
           Card(
@@ -41,11 +55,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Rubella'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Rubella',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
           Card(
@@ -53,11 +74,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Rotavirus'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Rotavirus',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
           Card(
@@ -65,11 +93,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Smallpox'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Smallpox',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
           Card(
@@ -77,11 +112,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Chickenpox'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Chickenpox',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
           Card(
@@ -89,11 +131,18 @@ class Vaccine extends StatelessWidget {
             child: ListTile(
               leading: Icon(
                 Icons.healing,
+                color: Colors.black,
                 size: 50,
               ),
-              title: Text('Yellow Fever'),
-              subtitle: Text('Live-attenuated vaccines'),
-              isThreeLine: true,
+              title: Text(
+                'Yellow Fever',
+                style: TextStyle(color: Colors.black),
+              ),
+              subtitle: Text(
+                'Live-attenuated vaccines',
+                style: TextStyle(color: Colors.black),
+              ),
+              //isThreeLine: true,
             ),
           ),
         ],
