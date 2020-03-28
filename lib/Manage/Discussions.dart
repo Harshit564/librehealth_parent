@@ -93,6 +93,7 @@ class Discussions extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orange,
         child: Icon(Icons.chat),
         onPressed: () {
           Navigator.push(
