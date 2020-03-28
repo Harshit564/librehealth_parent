@@ -1,6 +1,6 @@
 # LibreHealth - GSOC 2020
 
-Android application for healthcare workers in Kenya to capture birth information and elements of essential newborn care, such as immunization using flutter, firebase and SQLite.
+ Android application for mothers and guardians of newborn babies in Kenya to receive and display birth information and elements of essential newborn care, such as immunization records using flutter, firebase and SQLite.
 The project is for LibreHealth organization in GSOC 2020.
 
 ## Getting Started
@@ -31,4 +31,4 @@ P.S: You already have all the basic libraries and extensions of flutter on your 
 
 <img src="screenshots/10.jpeg" width=240>  <img src="screenshots/11.jpeg" width=240>  <img src="screenshots/12.jpeg" width=240>
 
-<img src="screenshots/13.jpeg" width=240>  <img src="screenshots/14.jpeg" width=240>  <img src="Screenshots/15.jpeg" width=240>
+<img src="screenshots/13.jpeg" width=240>  <img src="screenshots/14.jpeg" width=240>  <img src="screenshots/15.jpeg" width=240>
