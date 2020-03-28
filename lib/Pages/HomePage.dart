@@ -3,6 +3,8 @@ import 'package:librehealthparent/Data/ChildInfo.dart';
 import 'package:librehealthparent/Data/Vaccine.dart';
 import 'package:librehealthparent/Drawer/drawer.dart';
 import 'package:librehealthparent/Manage/Discussions.dart';
+import 'package:librehealthparent/Pages/LoginPage.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -29,6 +31,13 @@ class HomePageState extends State<HomePage> {
             ),
           ),
           centerTitle: true,
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.exit_to_app),
+              onPressed: () => _onAlertButtonsPressed(context),
+              tooltip: "Log Out",
+            ),
+          ],
           backgroundColor: Colors.orange,
         ),
         body: Padding(
@@ -162,5 +171,47 @@ class HomePageState extends State<HomePage> {
         ),
       ),
     );
+  }
+  _onAlertButtonsPressed(context) {
+    Alert(
+      style: AlertStyle(
+        backgroundColor: Colors.black,
+        titleStyle: TextStyle(color: Colors.white),
+        descStyle: TextStyle(color: Colors.white),
+      ),
+      context: context,
+      type: AlertType.warning,
+      title: "LOG OUT",
+      desc: "Do you want to log out your ID ?",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "Cancel",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          gradient: LinearGradient(colors: [
+            Color(0xFF20BF55),
+            Color(0xFF01BAEF),
+          ]),
+        ),
+        DialogButton(
+          child: Text(
+            "Log Out",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+          },
+          gradient: LinearGradient(colors: [
+            Color.fromRGBO(116, 116, 191, 1.0),
+            Color.fromRGBO(52, 138, 199, 1.0)
+          ]),
+        )
+      ],
+    ).show();
   }
 }
