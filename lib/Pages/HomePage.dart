@@ -51,14 +51,7 @@ class HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text('Amara'),
                     subtitle: Text('Age: 4 Month'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => childinfo(),
-                        ),
-                      );
-                    },
+                    onTap: ()=> _addCredential(),
                   ),
                 ),
                 Card(
@@ -66,14 +59,7 @@ class HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text('Amelia'),
                     subtitle: Text('Age: 6 Month'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => childinfo(),
-                        ),
-                      );
-                    },
+                    onTap: ()=> _addCredential(),
                   ),
                 ),
                 Card(
@@ -81,14 +67,7 @@ class HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text('Asher'),
                     subtitle: Text('Age: 5 year'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => childinfo(),
-                        ),
-                      );
-                    },
+                    onTap: ()=> _addCredential(),
                   ),
                 ),
                 Card(
@@ -96,14 +75,7 @@ class HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text('Atticus'),
                     subtitle: Text('Age: 1 month'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => childinfo(),
-                        ),
-                      );
-                    },
+                    onTap: ()=> _addCredential(),
                   ),
                 ),
                 Card(
@@ -111,14 +83,7 @@ class HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text('Aurora'),
                     subtitle: Text('Age: 5 year'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => childinfo(),
-                        ),
-                      );
-                    },
+                    onTap: ()=> _addCredential(),
                   ),
                 ),
                 Card(
@@ -126,14 +91,7 @@ class HomePageState extends State<HomePage> {
                     leading: Icon(Icons.person),
                     title: Text('Ava'),
                     subtitle: Text('Age: 2 year'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => childinfo(),
-                        ),
-                      );
-                    },
+                    onTap: ()=> _addCredential(),
                   ),
                 ),
               ],
@@ -170,6 +128,43 @@ class HomePageState extends State<HomePage> {
           fixedColor: Colors.orange,
         ),
       ),
+    );
+  }
+  Future<void> _addCredential() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Enter the Credential'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Credential',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            RaisedButton(
+              color: Colors.orange,
+              child: Text('Open'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => childinfo(),
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
     );
   }
   _onAlertButtonsPressed(context) {
