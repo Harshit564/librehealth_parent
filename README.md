@@ -33,4 +33,4 @@ P.S: You already have all the basic libraries and extensions of flutter on your 
 
 <img src="screenshots/13.jpeg" width=240>  <img src="screenshots/14.jpeg" width=240>  <img src="screenshots/15.jpeg" width=240>
 
-<img src="screenshots/16.jpeg" width=240>
+<img src="screenshots/16.jpeg" width=240>  <img src="screenshots/17.jpeg" width=240>  <img src="screenshots/18.jpeg" width=240>
